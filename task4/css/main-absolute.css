@@ -1,0 +1,63 @@
+/*盒子水平垂直居中--绝对定位法*/
+/*原理:需要垂直定位的盒子position:absolute;它就脱离了文档流,同时设置
+top: 50%;
+left: 50%;
+从而达到居中的目的,但是此时使用的是在absolute规则下的父盒子的50%,而且使用的边框位置来计算的,而不是内部平分位置,所以需要设置负值margin-left和margin-top来抵消该盒子一半的宽度.这个父盒子是一个wrapper,应该为一个空盒子,且不能设置边框,否则有内容会合该盒子冲突,*/
+/*总之,这不是一个完美的水平垂直居中方案*/
+/*它不能有父盒子的边框,除非父盒子长宽也固定.*/
+/*要求盒子的长度,宽度一定2016年07月15日*/
+
+
+
+/*update:
+通过加入以下一段代码至wrapper中,解决了之前的问题
+.wrapper {
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.container {
+    top: 50%;
+    left: 50%;
+    margin-top : -100px;
+    margin-left: -200px;
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+
+.left-circle,.right-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #fc0;
+}
+
+.left-circle {
+    left: -50px;
+    top: -50px;
+}
+
+.right-circle {
+    right: -50px;
+    bottom : -50px;
+}

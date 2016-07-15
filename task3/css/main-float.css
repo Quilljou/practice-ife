@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 20px;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #eee;
+    overflow: auto;
+}
+.team-name {
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #fff;
+    width: 200px;
+    float: left;
+}
+.team-name p {
+    float: right;
+    margin: 0;
+}
+.team-member {
+    height: 100%;
+    border: 1px solid #999;
+    background: #fff;
+    width: 120px;
+    float: right;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.team-member img {
+    margin-bottom: 20px;
+}
+
+.team-intro {
+    border: 1px solid #999;
+    margin: 0 140px 0 260px;
+    padding: 20px;
+    background: #fff;
+}

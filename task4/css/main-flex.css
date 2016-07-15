@@ -1,0 +1,46 @@
+/*盒子水平垂直居中--flex法*/
+/*概述:能够使用一个wrapper包裹整个容器,十比较完善的方法*/
+/*wrapper使用absolute,top:0,bottom:0;拉长整个wrapper,宽度100;*/
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*height: 100%;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    position: relative;;
+    overflow: hidden;
+
+}
+
+
+.left-circle,.right-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #fc0;
+}
+
+.left-circle {
+    left: -50px;
+    top: -50px;
+}
+
+.right-circle {
+    right: -50px;
+    bottom : -50px;
+}
