@@ -1,0 +1,188 @@
+$main-theme: #E8504F;
+// *** reset start***//
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+//***reset end***//
+
+//***nav starat***//
+.index-nav {
+    position: relative;
+    height: 58px;
+    padding-top: 13px;
+    .logo {
+        color: #000;
+        float: left;
+        margin-left: 55px;
+        span {
+            vertical-align: sup;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    .navbar {
+        ul {
+            margin: 0;
+            margin-top: 3px;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            margin-right: 150px;
+            li {
+                padding: 0 16px;
+                float: left;
+                a {
+                    display: inline-block;
+                    color: rgba(0,0,0,0.8);
+                    &:hover {
+                        color: $main-theme;
+                        border-bottom: 3px solid $main-theme;
+                        padding-bottom: 14px;
+                    }
+                    &:visited {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .login {
+        position: absolute;
+        right: 0;
+        margin-right: 60px;
+        margin-top: 3px;
+    }
+}
+// ***nav end***//
+
+
+// ***index-header start***//
+.index-header {
+    background: url("../img/header.jpg")  center center no-repeat;
+    background-size: cover;
+    height: 690px;
+    h1,p,button {
+        color: #fff;
+        margin-left: 10%;
+
+    }
+    h1 {
+        font-size: 64px;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 220px;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 66px;
+    }
+    button {
+        background: $main-theme;
+        text-align: center;
+        vertical-align: middle;
+        width: 330px;
+        border: 0;
+        height: 64px;
+        font-size: 30px;
+    }
+}
+.header-cover {
+    background: rgba(0,0,0,0.2);
+    height: 100%;
+}
+//***header end ***//
+
+//***goal section start***//
+.goals {
+    color: rgba(0,0,0,0.5);
+    margin-top: 40px;
+    padding: 0 40px;
+    .goal {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        .goal-list {
+            float: left;
+            width: 25%;
+            text-align: center;
+            img {
+                margin-bottom: 45px;
+            }
+            .goal-list-info {
+                margin-bottom: 65px;
+                border-right: 2px solid rgba(0,0,0,0.3);
+                padding: 0 60px;
+            }
+            .no-border {
+                border: 0;
+            }
+
+        }
+    }
+}
+//***goal section end ***//
+
+// ***newworld section start***//
+.newworld {
+    padding-top: 80px;
+    clear: left;
+    text-align: center;
+    height: 360px;
+    background: #ededec;
+    p {
+        margin-bottom: 40px;
+        margin: 0;
+        color: rgba(0,0,0,0.5);
+        font-size: 60px;
+    }
+}
+//***newworld section end***//
+
+
+// ***acitivity section start***//
+.activity {
+    .activity-search {
+        height: 341px;
+        background: url("../img/activity.jpg");
+        background-size: cover;
+        .activity-search-cover {
+            height: 100%;
+            background: rgba(0,0,0,0.1);
+            text-align: center;
+            color: #fff;
+            h2 {
+                font: 25px;
+                font-weight: normal;
+                margin: 0;
+                padding-top: 54px;
+            }
+            .h2-bottom {
+                margin: 0 auto;
+                border-bottom: 2px solid #fff;
+                width: 30px;
+            }
+        }
+    }
+    .city-activity {
+        height: 603px;
+        background: #f7f7f7;
+        padding: 98px 108px 108px 108px;
+        .city-panel {
+            display: inline-block;
+            width: 25%;
+            margin-right: -2%;
+            text-align: center;
+        }
+        .clear-margin {
+            margin-right: 0;
+        }
+    }
+}
