@@ -8,25 +8,31 @@ html,body {
 //***reset end***//
 
 //***variable***//
-$gutter:20px;
+$gutter: 20px;
 
 
 .container {
-    max-width: 980px;
     width: 100%;
+    max-width: 980px;
     margin: 0 auto;
 }
 .row {
     width: 100%;
-    height: 50px;
+    // padding: $gutter;
+    overflow: hidden;
     // margin-left: -$gutter/2;
     // margin-right: -$gutter/2;
-    padding: $gutter/2;
+    // &:after {
+    //     content: "";
+    //     clear: both;
+    //     display: table;
+    // }
 }
 [class^="col-"] {
     float: left;
     padding: $gutter/2;
 }
+
 @media (min-width: 768px) {
     .col-sm-12 {
       width: 100%;
