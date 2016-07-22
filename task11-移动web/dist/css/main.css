@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p, body, html, ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+
+body {
+  background: #fff; }
+
+.status-bar {
+  color: #fff;
+  height: 3rem;
+  background: #91D4DA;
+  padding: 0.9rem   0.5rem;
+  position: relative; }
+  .status-bar .back {
+    position: absolute; }
+    .status-bar .back span {
+      font-size: 20px;
+      margin-right: 0.3rem; }
+  .status-bar .title {
+    text-align: center; }
+
+nav ul {
+  display: flex;
+  background: #fff;
+  height: 3rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.banner {
+  height: 14rem;
+  width: 100%;
+  background: url(http://placehold.it/320x180) center center no-repeat;
+  background-size: cover; }
+
+.tags-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 8rem;
+  border-bottom: 0.1rem solid #F5F5F5; }
+  .tags-content .tag {
+    text-align: center; }
+    .tags-content .tag .wrap {
+      margin-bottom: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: #00C7D6;
+      color: #fff;
+      position: relative; }
+      .tags-content .tag .wrap span {
+        font-size: 2rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.7rem; }
+
+.vertical-pannel, .tags, .module-1, .module-2, .module-3 {
+  padding: 0 1rem; }
+
+.vertical-pannel-content {
+  height: 10rem;
+  padding: 0 0.6rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.9rem solid #F5F5F5; }
+  .vertical-pannel-content .gap {
+    height: 7rem;
+    width: 0.1rem;
+    background: #F5F5F5; }
+
+.module-1-content, .module-2-content {
+  height: 100%;
+  background: #fff; }
+  .module-1-content h3, .module-2-content h3 {
+    height: 2rem;
+    border-bottom: 0.2rem solid #F5F5F5; }
+    .module-1-content h3 span, .module-2-content h3 span {
+      vertical-align: middle;
+      line-height: 2rem; }
+  .module-1-content .module-1-article, .module-1-content .module-2-article, .module-2-content .module-1-article, .module-2-content .module-2-article {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    height: 13rem;
+    align-content: space-between; }
+    .module-1-content .module-1-article .left, .module-1-content .module-1-article .center, .module-1-content .module-1-article .right, .module-1-content .module-2-article .left, .module-1-content .module-2-article .center, .module-1-content .module-2-article .right, .module-2-content .module-1-article .left, .module-2-content .module-1-article .center, .module-2-content .module-1-article .right, .module-2-content .module-2-article .left, .module-2-content .module-2-article .center, .module-2-content .module-2-article .right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .module-1-content .module-1-article .context, .module-1-content .module-2-article .context, .module-2-content .module-1-article .context, .module-2-content .module-2-article .context {
+      text-align: center;
+      height: 2rem;
+      width: 6rem;
+      background: #F5F5F5;
+      line-height: 2rem;
+      vertical-align: middle; }
+    .module-1-content .module-1-article .img, .module-1-content .module-2-article .img, .module-2-content .module-1-article .img, .module-2-content .module-2-article .img {
+      height: 5rem;
+      width: 5rem;
+      background: url(http://placehold.it/80x80) center center no-repeat;
+      background-size: cover; }
+
+.module-1, .module-2 {
+  height: 16rem;
+  border-bottom: 0.9rem solid #F5F5F5; }
+
+.module-3 .up, .module-3 .center {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2rem solid #F5F5F5; }
+  .module-3 .up .img, .module-3 .center .img {
+    margin-right: 0.5rem;
+    height: 5rem;
+    width: 6rem;
+    background: url(http://placehold.it/100x80) center center no-repeat;
+    background-size: cover; }
+  .module-3 .up .article, .module-3 .center .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .module-3 .up .article h3, .module-3 .center .article h3 {
+      font-size: 1.275rem; }
+
+.module-3 .down {
+  padding: 0.8rem 0; }
+  .module-3 .down h3 {
+    font-size: 1.275rem;
+    margin: 0 0 0.3rem 0; }
+  .module-3 .down .images {
+    display: flex;
+    justify-content: space-between; }
+    .module-3 .down .images .img {
+      height: 5rem;
+      width: 7rem;
+      background: url(http://placehold.it/100x80) center center no-repeat;
+      background-size: cover; }
